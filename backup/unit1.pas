@@ -5,7 +5,7 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, LazUtf8;
 
 type
 
@@ -121,12 +121,12 @@ end;
 
 procedure TForm1.Button20Click(Sender: TObject);
 begin
-  Visor.Text := Visor.Text + 'tan';
+  Visor.Text := Visor.Text + 'tan(';
 end;
 
 procedure TForm1.Button21Click(Sender: TObject);
 begin
-  Visor.Text := Visor.Text + '()²';
+  Visor.Text := Visor.Text + '²';
 end;
 
 procedure TForm1.Button22Click(Sender: TObject);
@@ -141,12 +141,12 @@ end;
 
 procedure TForm1.Button24Click(Sender: TObject);
 begin
-  Visor.Text := Visor.Text + 'Não sei';
+  Visor.Text := Visor.Text + '^';
 end;
 
 procedure TForm1.Button25Click(Sender: TObject);
 begin
-  Visor.Text := Visor.Text + 'cos';
+  Visor.Text := Visor.Text + 'cos(';
 end;
 
 procedure TForm1.Button26Click(Sender: TObject);
@@ -156,12 +156,12 @@ end;
 
 procedure TForm1.Button27Click(Sender: TObject);
 begin
-  Visor.Text := Visor.Text + 'log';
+  Visor.Text := Visor.Text + 'log(';
 end;
 
 procedure TForm1.Button28Click(Sender: TObject);
 begin
-  Visor.Text := Visor.Text + '()!';
+  Visor.Text := Visor.Text + '!';
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
@@ -176,7 +176,7 @@ end;
 
 procedure TForm1.Button31Click(Sender: TObject);
 begin
-  Visor.Text := Visor.Text + 'sin';
+  Visor.Text := Visor.Text + 'sin(';
 end;
 
 procedure TForm1.Button33Click(Sender: TObject);
@@ -263,7 +263,7 @@ end;
 
 procedure TForm1.lnClick(Sender: TObject);
 begin
-  Visor.Text := Visor.Text + 'ln';
+  Visor.Text := Visor.Text + 'ln(';
 end;
 
 procedure TForm1.Button19Click(Sender: TObject);
